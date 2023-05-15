@@ -20,6 +20,7 @@ cd /bin
 ## Run the backend micro-services
 See the README.md files inside the each microservices directory:
 
+- type1
 
 
 ## Run API Gateway (Spring Gateway)
@@ -29,6 +30,10 @@ mvn spring-boot:run
 ```
 
 ## Test by API
+- type1
+```
+ http :8088/machinesTypes machine_type="machine_type" machine_name="machine_name" 
+```
 
 
 ## Run the frontend

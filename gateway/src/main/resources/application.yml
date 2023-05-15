@@ -8,6 +8,10 @@ spring:
   cloud:
     gateway:
       routes:
+        - id: type1
+          uri: http://localhost:8081
+          predicates:
+            - Path=/machinesTypes/**, 
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -31,6 +35,10 @@ spring:
   cloud:
     gateway:
       routes:
+        - id: type1
+          uri: http://type1:8080
+          predicates:
+            - Path=/machinesTypes/**, 
         - id: frontend
           uri: http://frontend:8080
           predicates:
